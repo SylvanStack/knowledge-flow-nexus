@@ -147,16 +147,16 @@ cd knowledge-flow-nexus
 docker-compose up -d
 
 # 启动后端服务
-cd server
+cd knowledge-flow-nexus-backend
 ./mvnw spring-boot:run
 
 # 启动前端
-cd client
+cd knowledge-flow-nexus-front
 npm install
 npm run dev
 
 # 启动算法服务(可选)
-cd algorithm-services
+cd knowledge-flow-nexus-algo
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
